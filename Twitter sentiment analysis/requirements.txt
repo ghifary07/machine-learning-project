@@ -1,4 +1,0 @@
-pysastrawi
-pandas
-sklearn
-tweepy
