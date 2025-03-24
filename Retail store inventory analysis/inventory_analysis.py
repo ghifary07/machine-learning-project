@@ -33,7 +33,7 @@ def units_per_day(table_name, cat, quantity):
 def inventory_analysis(table_name, store):
     df = pd.read_sql(f'''SELECT category, AVG(demand_forecast) AS demands, inventory_level
                      FROM {table_name} WHERE store_id="{store}"
-                     GROUP BY category ORDER BY category ASC''', conn)
+                     GROUP BY category ORDER BY demands DESC''', conn)
     return df
 
 # total units sold per categories
