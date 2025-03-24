@@ -41,21 +41,21 @@ sqlite> .import --csv --skip 1 retail_store_inventory.csv inventory
 ```
 
 **2. EDA** -  Setelah itu dilakukan berbagai analisis pada data menggunakan query sql dan pandas berdasarkan kategori produk. Berikut adalah hasil analisis dataset:
-* Total produk yang terjual per kategori
+* Total produk yang terjual per kategori  
 ![sold](https://github.com/user-attachments/assets/9dddfd1e-21c2-4985-8111-0781dbf50a88)
-* Total produk yang diorder per kategori
+* Total produk yang diorder per kategori  
 ![order](https://github.com/user-attachments/assets/bff06e2c-c9d1-400e-bb5b-19fc5546352c)
-* Perbandingan rata-rata harga produk per kategori dengan pesaing
+* Perbandingan rata-rata harga produk per kategori dengan pesaing  
 ![priceComp](https://github.com/user-attachments/assets/9b617e83-4ffe-4d1d-9377-0c39831537c6)
-* Rata-rata prediksi permintaan produk per kategori pada toko 1
+* Rata-rata prediksi permintaan produk per kategori pada toko 1  
 ![S1demand](https://github.com/user-attachments/assets/d5a704db-885a-418a-b17d-9f3f9387a6c6)
-* Rata-rata prediksi permintaan produk per kategori pada toko 2
+* Rata-rata prediksi permintaan produk per kategori pada toko 2  
 ![S2demand](https://github.com/user-attachments/assets/ae6077a7-5051-4ed6-848c-bc03d9921dee)
-* Rata-rata prediksi permintaan produk per kategori pada toko 3
+* Rata-rata prediksi permintaan produk per kategori pada toko 3  
 ![S3demand](https://github.com/user-attachments/assets/cb578bff-70ce-498a-a054-8451f28d20cd)
-* Rata-rata prediksi permintaan produk per kategori pada toko 4
+* Rata-rata prediksi permintaan produk per kategori pada toko 4  
 ![S4demand](https://github.com/user-attachments/assets/081a3760-ba4a-44ba-a883-87d5808c1c65)
-* Rata-rata prediksi permintaan produk per kategori pada toko 5
+* Rata-rata prediksi permintaan produk per kategori pada toko 5  
 ![S5demand](https://github.com/user-attachments/assets/016e731f-e634-4f07-a140-0f7026546237)
 
 **3. Visualisasi data** - Visualisasi data dilakukan untuk mempermudah membaca data dan mencari pola dari beberapa tabel hasil query. Berikut adalah hasil visualisasi data dari total penjualan, pemesanan barang ,dan penjualan tiap kategori barang per harinya.
