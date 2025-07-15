@@ -30,30 +30,30 @@ Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.
 
 **2. Analisa data** -  Data yang telah diekspor kemudian diolah dengan menggunakan pivot table sehingga dihasilkan 4 tabel hasil. Tabel tersebut terdiri dari tabel dengan 10 publisher, game, dan platform dengan total penjualan tertinggi dantabel data penjualan per wilayah serta global dari seluruh genre game.
 * Tabel 10 publisher dengan total penjualan terbanyak
-![publisher](/images/1.PNG)
+![publisher](video game sales/images/1.PNG)
 * Tabel 10 games dengan total penjualan terbanyak 
-![games](/images/2.PNG)
+![games](video game sales/images/2.PNG)
 * Tabel penjualan pada seluruh genre game
-![genre](/images/3.PNG)
+![genre](video game sales/images/3.PNG)
 * Tabel 10 platform dengan total penjualan terbanyak  
-![platform](/images/4.PNG)
+![platform](video game sales/images/4.PNG)
 
 **3. Visualisasi data** - Visualisasi data tiap tabel hasil analisa dibuat menjadi sebuah dashboard pada microsoft excel menggunakan pivot chart dan slicer.
 * Grafik penjualan dari 10 publisher dengan penjualan game terbanyak
-![publisher](/images/51.PNG)
+![publisher](video game sales/images/51.PNG)
 * Grafik penjualan 10 games dengan penjualan terbanyak dari setiap wilayah
-![games](/images/52.PNG)
+![games](video game sales/images/52.PNG)
 * Grafik penjualan seluruh genre game pada setiap wilayah
-![genre](/images/53.PNG)
+![genre](video game sales/images/53.PNG)
 * Grafik penjualan dari 10 platform dengan penjualan terbanyak
-![platform](/images/54.PNG)
+![platform](video game sales/images/54.PNG)
 * Tampilan penuh dashboard
-![dashboard](/images/5.PNG)
+![dashboard](video game sales/images/5.PNG)
 
 **4. Pembuatan model** - Data penjualan yang telah dibersihkan juga digunakan untuk melatih model neural network untuk memprediksi banyaknya game yang terjual secara global. Model nerural network yang digunakan merupakan multi layer perceptorn regressor dengan jumlah neuron sebanyak 30 pada hidden layer dan fungsi aktivasi relu. Optimizer yang digunakan adalah Adaptive Moment Estimation(Adam). Model dilatih sebanyak 200 iterasi. Data yang digunakan dibagi menjadi data latih dan data uji dengan rasio 80:20. 
-![model](/images/6.PNG)
+![model](video game sales/images/6.PNG)
 Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
-![hasil](/images/7.PNG)
+![hasil](video game sales/images/7.PNG)
 
 ## Kesimpulan  
 Dari hasil analisa data sebelumnya dapat diambil kesimpulan sebagai berikut:  
