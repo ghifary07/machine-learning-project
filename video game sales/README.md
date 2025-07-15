@@ -30,30 +30,30 @@ Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.
 
 **2. Analisa data** -  Data yang telah diekspor kemudian diolah dengan menggunakan pivot table sehingga dihasilkan 4 tabel hasil. Tabel tersebut terdiri dari tabel dengan 10 publisher, game, dan platform dengan total penjualan tertinggi dantabel data penjualan per wilayah serta global dari seluruh genre game.
 * Tabel 10 publisher dengan total penjualan terbanyak
-![publisher](machine-learning-project/images/1.png)
+![publisher](video game sales/images/1.png)
 * Tabel 10 games dengan total penjualan terbanyak 
-![games](machine-learning-project/images/2.png)
+![games](video game sales/images/2.png)
 * Tabel penjualan pada seluruh genre game
-![genre](machine-learning-project/images/3.png)
+![genre](video game sales/images/3.png)
 * Tabel 10 platform dengan total penjualan terbanyak  
-![platform](machine-learning-project/images/4.png)
+![platform](video game sales/images/4.png)
 
 **3. Visualisasi data** - Visualisasi data tiap tabel hasil analisa dibuat menjadi sebuah dashboard pada microsoft excel menggunakan pivot chart dan slicer.
 * Grafik penjualan dari 10 publisher dengan penjualan game terbanyak
-![publisher](machine-learning-project/images/51.png)
+![publisher](video game sales/images/51.png)
 * Grafik penjualan 10 games dengan penjualan terbanyak dari setiap wilayah
-![games](machine-learning-project/images/52.png)
+![games](video game sales/images/52.png)
 * Grafik penjualan seluruh genre game pada setiap wilayah
-![genre](machine-learning-project/images/53.png)
+![genre](video game sales/images/53.png)
 * Grafik penjualan dari 10 platform dengan penjualan terbanyak
-![platform](machine-learning-project/images/54.png)
+![platform](video game sales/images/54.png)
 * Tampilan penuh dashboard
-![dashboard](machine-learning-project/images/5.png)
+![dashboard](video game sales/images/5.png)
 
 **4. Pembuatan model** - Data penjualan yang telah dibersihkan juga digunakan untuk melatih model neural network untuk memprediksi banyaknya game yang terjual secara global. Model nerural network yang digunakan merupakan multi layer perceptorn regressor dengan jumlah neuron sebanyak 30 pada hidden layer dan fungsi aktivasi relu. Optimizer yang digunakan adalah Adaptive Moment Estimation(Adam). Model dilatih sebanyak 200 iterasi. Data yang digunakan dibagi menjadi data latih dan data uji dengan rasio 80:20. 
-![model](machine-learning-project/images/6.png)
+![model](video game sales/images/6.png)
 Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
-![hasil](machine-learning-project/images/7.png)
+![hasil](video game sales/images/7.png)
 
 ## Kesimpulan  
 Dari hasil analisa data sebelumnya dapat diambil kesimpulan sebagai berikut:  
