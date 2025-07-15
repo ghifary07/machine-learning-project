@@ -30,7 +30,7 @@ Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.
 
 **2. Analisa data** -  Data yang telah diekspor kemudian diolah dengan menggunakan pivot table sehingga dihasilkan 4 tabel hasil. Tabel tersebut terdiri dari tabel dengan 10 publisher, game, dan platform dengan total penjualan tertinggi dantabel data penjualan per wilayah serta global dari seluruh genre game.
 * Tabel 10 publisher dengan total penjualan terbanyak
-![publisher](video game sales/images/1.png)
+![publisher](video game sales/images/1.PNG)
 * Tabel 10 games dengan total penjualan terbanyak 
 ![games](video game sales/images/2.png)
 * Tabel penjualan pada seluruh genre game
