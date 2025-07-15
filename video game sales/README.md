@@ -52,6 +52,7 @@ Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.
 
 **4. Pembuatan model** - Data penjualan yang telah dibersihkan juga digunakan untuk melatih model neural network untuk memprediksi banyaknya game yang terjual secara global. Model nerural network yang digunakan merupakan multi layer perceptorn regressor dengan jumlah neuron sebanyak 30 pada hidden layer dan fungsi aktivasi relu. Optimizer yang digunakan adalah Adaptive Moment Estimation(Adam). Model dilatih sebanyak 200 iterasi. Data yang digunakan dibagi menjadi data latih dan data uji dengan rasio 80:20. 
 ![model](images/6.PNG)
+
 Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
 ![hasil](images/7.PNG)
 
