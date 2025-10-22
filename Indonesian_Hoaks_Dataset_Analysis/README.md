@@ -15,23 +15,23 @@ Dataset didapat dari kaggle dengan link: [Indonesian Hoaks news](https://www.kag
 
 **2. Analisa data** -  Data yang telah diimpor kemudian dianalisa untuk mengetahui distribusi beserta jumlah total pembaca tiap topik pada data dan trend topik tiap tahunnya.
 * Grafik distribusi topik dan total pembacanya
-![topicview](/Pictures/TopicView.PNG)
+![topicview](/Indonesian_Hoaks_Dataset_Analysis/Pictures/TopicView.PNG)
 * Grafik trend frekuensi tiap topik hoaks
-![topictrend](/Pictures/TopicTrend.PNG)
+![topictrend](/Indonesian_Hoaks_Dataset_Analysis/Pictures/TopicTrend.PNG)
 Terlihat dari grafik diatas, topic hoaks memiliki jumlah dan frekuensi kemunculan yang besar dibandingkan dengan topik lainnya. Jumlah berita hoaks meningkat besar pada akhir tahun 2019 dan awal 2020. Jumlah berita hoaks semakin menurun setelah periode tersebut.
 
 **3. Named Entity Recognition (NER)** - Menggunakan model spacy yang telah diimport, dilakukan proses NER menggunakan library spacy. Dari proses tersebut didapatkan 18 label entitas deangan entitas yang paling banyak disebut merupakan entitas dengan label PERSON, GPE(Geo Political Entity), dan ORG(Organization). Dari proses NER didapat 15 entitas yang paling sring muncul dalam teks berita. namun, masih terdapat beberapa kata yang salah terdeteksi sebagai entitas atupun kesalahan pada labelnya.
 * Grafik distribusi label nama entitas
-![entitydis](/Pictures/NERTrend.PNG)
+![entitydis](/Indonesian_Hoaks_Dataset_Analysis/Pictures/NERTrend.PNG)
 * 15 entitas yang paling banyak muncul
-![common](/Pictures/1.PNG)
+![common](/Indonesian_Hoaks_Dataset_Analysis/Pictures/1.PNG)
 
 **4. Perbaikan dan pembersihan label data entitas** - Data entitas yang telah didapat kemudian dibersihkan dan diperbaiki untuk mendapatkan hasil yang lebih akurat. Pembersihan dilakukan dengan menghapus kata-kata yang bukan termasuk entitas seperti "dilansir" dan "link counter". Sedangkan perbaikan data dilakukan dengan menambahkan pattern atau label yang benar pada entitas dengan kesalahan label. Contohnya Jakarta dideteksi sebagai ORG(Organization) diubah menjadi GPE(Geo Political Entity) dan Covid dari PERSON menjadi EVENT.  
-![wronge](/Pictures/WrongE.PNG)
+![wronge](/Indonesian_Hoaks_Dataset_Analysis/Pictures/WrongE.PNG)
 Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
-![rule](/Pictures/EditE.PNG)
+![rule](/Indonesian_Hoaks_Dataset_Analysis/Pictures/EditE.PNG)
 Setelah dilakukan pembersihan didapat 15 entitas yang paling sering muncul dalam teks berita yang lebih akurat.
-![commontrue](/Pictures/common.PNG)
+![commontrue](/Indonesian_Hoaks_Dataset_Analysis/Pictures/common.PNG)
 
 ## Kesimpulan  
 Dari hasil analisa data sebelumnya dapat diambil kesimpulan sebagai berikut:  
