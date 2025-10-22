@@ -28,8 +28,8 @@ Terlihat dari grafik diatas, topic hoaks memiliki jumlah dan frekuensi kemuncula
 
 **4. Perbaikan dan pembersihan label data entitas** - Data entitas yang telah didapat kemudian dibersihkan dan diperbaiki untuk mendapatkan hasil yang lebih akurat. Pembersihan dilakukan dengan menghapus kata-kata yang bukan termasuk entitas seperti "dilansir" dan "link counter". Sedangkan perbaikan data dilakukan dengan menambahkan pattern atau label yang benar pada entitas dengan kesalahan label. Contohnya Jakarta dideteksi sebagai ORG(Organization) diubah menjadi GPE(Geo Political Entity) dan Covid dari PERSON menjadi EVENT.  
 ![wronge](/Indonesian_Hoaks_Dataset_Analysis/Pictures/WrongE.PNG)
-![rule](/Indonesian_Hoaks_Dataset_Analysis/Pictures/EditE.PNG)
-Setelah dilakukan pembersihan didapat 15 entitas yang paling sering muncul dalam teks berita yang lebih akurat.
+![rule](/Indonesian_Hoaks_Dataset_Analysis/Pictures/EditE.PNG)<br>
+Setelah dilakukan pembersihan didapat 15 entitas yang paling sering muncul dalam teks berita yang lebih akurat.<br>
 ![commontrue](/Indonesian_Hoaks_Dataset_Analysis/Pictures/common.PNG)
 
 ## Kesimpulan  
