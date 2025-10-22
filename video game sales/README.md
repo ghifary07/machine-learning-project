@@ -13,32 +13,48 @@ Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.
 ## Steps
 **1. Import dan cleaning dataset** -  dataset diimport nmenggunakan pandas lalu dilakukan pembersihan data dengan menghilangkan data duplikat dan data yang missing. Setelah proses pembersihan data, jumlah data yang tersisa sebanyak 16.540 baris data. Data yang sudah dibersihkan kemudian diekspor ke dalam file excel "output.xlsx" untuk dianalisa menggunakan pivot table.
 
+**2. Analisa data** -  Data yang telah diekspor kemudian diolah dengan # 📌 Deskripsi  
+Proyek ini bertujuan untuk melakukan analisis trend genre video games berdasarkan jumlah salinan game yang terjual pada tahun 2006 - 2016 . Selain itu juga dilakukan analisis penjualan beberapa publisher dan membuat model prediksi menggunakan neural network.  
+
+## Tools yang Digunakan  
+- Python (Pandas, Matplotlib, Sqlite)  
+- Google colab
+
+## Dataset  
+Dataset ini berisi data penjualan video game di berbagai platform, genre, dan wilayah. Dataset ini berisi 16.600 baris data dan terdiri dari 11 atribut. Atribut penjualan dibagi menjadi penjualan pada wilayah Jepang, Eropa, Amerika utara, dan wilayah lain. 
+
+Dataset didapat dari kaggle dengan link: [Video Games Sales](https://www.kaggle.com/datasets/anandshaw2001/video-game-sales/data).  
+
+## Steps
+**1. Import dan cleaning dataset** -  dataset diimport nmenggunakan pandas lalu dilakukan pembersihan data dengan menghilangkan data duplikat dan data yang missing. Setelah proses pembersihan data, jumlah data yang tersisa sebanyak 16.540 baris data. Data yang sudah dibersihkan kemudian diekspor ke dalam file excel "output.xlsx" untuk dianalisa menggunakan pivot table.
+
 **2. Analisa data** -  Data yang telah diekspor kemudian diolah dengan menggunakan pivot table sehingga dihasilkan 4 tabel hasil. Tabel tersebut terdiri dari tabel dengan 10 publisher, game, dan platform dengan total penjualan tertinggi dantabel data penjualan per wilayah serta global dari seluruh genre game.
 * Tabel 10 publisher dengan total penjualan terbanyak
-![publisher](/images/1.PNG)
+![publisher](images/1.PNG)
 * Tabel 10 games dengan total penjualan terbanyak 
-![games](/images/2.PNG)
+![games](images/2.PNG)
 * Tabel penjualan pada seluruh genre game
-![genre](/images/3.PNG)
+![genre](images/3.PNG)
 * Tabel 10 platform dengan total penjualan terbanyak  
-![platform](/images/4.PNG)
+![platform](images/4.PNG)
 
 **3. Visualisasi data** - Visualisasi data tiap tabel hasil analisa dibuat menjadi sebuah dashboard pada microsoft excel menggunakan pivot chart dan slicer.
 * Grafik penjualan dari 10 publisher dengan penjualan game terbanyak
-![publisher](/images/51.PNG)
+![publisher](images/51.PNG)
 * Grafik penjualan 10 games dengan penjualan terbanyak dari setiap wilayah
-![games](/images/52.PNG)
+![games](images/52.PNG)
 * Grafik penjualan seluruh genre game pada setiap wilayah
-![genre](/images/53.PNG)
+![genre](images/53.PNG)
 * Grafik penjualan dari 10 platform dengan penjualan terbanyak
-![platform](/images/54.PNG)
+![platform](images/54.PNG)
 * Tampilan penuh dashboard
-![dashboard](/images/5.PNG)
+![dashboard](images/5.PNG)
 
 **4. Pembuatan model** - Data penjualan yang telah dibersihkan juga digunakan untuk melatih model neural network untuk memprediksi banyaknya game yang terjual secara global. Model nerural network yang digunakan merupakan multi layer perceptorn regressor dengan jumlah neuron sebanyak 30 pada hidden layer dan fungsi aktivasi relu. Optimizer yang digunakan adalah Adaptive Moment Estimation(Adam). Model dilatih sebanyak 200 iterasi. Data yang digunakan dibagi menjadi data latih dan data uji dengan rasio 80:20. 
-![model](/images/6.PNG)
+![model](images/6.PNG)
+
 Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
-![hasil](/images/7.PNG)
+![hasil](images/7.PNG)
 
 ## Kesimpulan  
 Dari hasil analisa data sebelumnya dapat diambil kesimpulan sebagai berikut:  
