@@ -28,12 +28,11 @@ Terlihat dari grafik diatas, topic hoaks memiliki jumlah dan frekuensi kemuncula
 
 **4. Perbaikan dan pembersihan label data entitas** - Data entitas yang telah didapat kemudian dibersihkan dan diperbaiki untuk mendapatkan hasil yang lebih akurat. Pembersihan dilakukan dengan menghapus kata-kata yang bukan termasuk entitas seperti "dilansir" dan "link counter". Sedangkan perbaikan data dilakukan dengan menambahkan pattern atau label yang benar pada entitas dengan kesalahan label. Contohnya Jakarta dideteksi sebagai ORG(Organization) diubah menjadi GPE(Geo Political Entity) dan Covid dari PERSON menjadi EVENT.  
 ![wronge](/Indonesian_Hoaks_Dataset_Analysis/Pictures/WrongE.PNG)
-Hasilnya didapat nilai rmse sebesar 0,0191 dari hasil pengujian model menggunakan data uji
 ![rule](/Indonesian_Hoaks_Dataset_Analysis/Pictures/EditE.PNG)
 Setelah dilakukan pembersihan didapat 15 entitas yang paling sering muncul dalam teks berita yang lebih akurat.
 ![commontrue](/Indonesian_Hoaks_Dataset_Analysis/Pictures/common.PNG)
 
 ## Kesimpulan  
 Dari hasil analisa data sebelumnya dapat diambil kesimpulan sebagai berikut:  
-**1.** Frekuensi kemunculan berita hoaks meningkat pada akhir tahun 2019 dan awal tahun 2020, waktu ini bertepatan dengan terjadinya penyebaran virus covid-19 di seluruh dunia. Hal ini juga sesuai dengan hasil NER yang menunjukkan Covid menjadi salah satu entitas yang paling sering muncul di berita hoaks yaitu sebanyak 4240 kali.
+**1.** Frekuensi kemunculan berita hoaks meningkat pada akhir tahun 2019 dan awal tahun 2020, waktu ini bertepatan dengan terjadinya penyebaran virus covid-19 di seluruh dunia. Hal ini juga sesuai dengan hasil NER yang menunjukkan Covid menjadi salah satu entitas yang paling sering muncul di berita hoaks yaitu sebanyak 4240 kali.<br>
 **2.** Tahun 2019 dan 2024 merupakan entitas tahun yang paling sering muncul pada teks berita. Tahun 2019 merupkan awal terjadinya bencana COVID. Sedangkan pada tahun 2024 diselenggarakan pemilihan umum untuk memilih presiden negara republik indonesia. Joko Widodo, presiden Indonesia sebelumnya menjadi entitas PERSON yang paling sering muncul. Hal ini menunjukkan banyaknya berita hoaks yang menyebut nama Jokowi pada masa menjelang pemilu 2024.    
